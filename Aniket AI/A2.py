@@ -124,8 +124,7 @@ def main():
         print("Not possible to solve")
 
 
-if __name__ == '__main__':
-    main()
+main()
 
 
 

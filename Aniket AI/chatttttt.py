@@ -1,12 +1,9 @@
+import nltk
+from nltk.chat.util import Chat,reflections
+pairs=[
+    [r"(.*)are you",["hello %1 i am jayesh chatbot how can i help you"]]
+    [r"show me dress",["yes here are options"]]
 
-#Bakery Chatbot
-from nltk.chat.util import Chat, reflections
-pairs =[
-	['(.*) your name', ['My name is Washington!']],
 ]
-
-
-print("Hello. Welcome to Foodies Bakery! How can I help you? [Note: Please use lowercase letters to converse.]")
-chat = Chat(pairs, reflections)
+chat=Chat(pairs,reflections)
 chat.converse()
-
